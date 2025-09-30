@@ -1,0 +1,265 @@
+@font-face {
+  font-family: "DailyProphet";
+  src: url("fonts/daily-prophet.ttf") format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "MainText";
+  src: url("fonts/main-text.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Title";
+  src: url("fonts/titles.otf") format("opentype");
+  font-weight: 900;
+}
+
+.paper {
+  background-image: url("img/pergament-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.paper::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 245, 0.15);
+  pointer-events: none;
+}
+
+.text-ink {
+  color: #0e0906;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.container {
+  padding: 24px;
+}
+
+.main-head {
+  font-family: "DailyProphet", serif;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  text-align: center;
+  margin: 32px 0 8px;
+}
+
+.strapline {
+  font-family: "IM Fell English SC", serif;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.star {
+  font-family: "Cinzel", serif;
+  font-size: 18px;
+  opacity: 0.9;
+  line-height: 1;
+}
+
+.bodycopy {
+  font-family: "MainText", serif;
+  line-height: 1.7;
+}
+
+.title {
+  font-family: "Title", serif;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.dropcap:first-letter {
+  font-size: 3.2rem;
+  line-height: 0.75;
+  float: left;
+  padding: 0.15rem 0.35rem 0 0;
+}
+.headline-divider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.headline-divider {
+  position: relative;
+}
+.headline-divider.bottom,
+.headline-divider-row {
+  width: calc(100% - 5px);
+  margin: 12px auto 24px;
+}
+.headline-divider.top {
+  flex: 0 0 65%;
+  margin: 0;
+}
+
+.headline-divider.bottom::after,
+.headline-divider.top::before,
+.headline-divider.rest-top::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background: #0e0906;
+}
+.headline-divider::before {
+  margin-bottom: 2px;
+}
+
+.headline-divider.bottom::before,
+.headline-divider.top::after,
+.headline-divider.rest-top::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: rgba(14, 9, 6, 0.6);
+}
+
+.headline-divider.top .logo-mark {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url("img/my-photo.jpeg");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #0e0906;
+}
+
+.headline-text {
+  font-family: "IM Fell English SC", serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.headline-divider.rest-top {
+  flex: 1 1 auto;
+}
+
+.content-frame {
+  position: relative;
+}
+
+.frame-inner {
+  padding: 16px;
+  min-height: 700px;
+}
+
+.frame-edge.top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background: #0e0906;
+}
+
+.frame-edge.left,
+.frame-edge.right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frame-edge.left {
+  left: 0;
+}
+.frame-edge.right {
+  right: 0;
+}
+
+.frame-edge.left .seg,
+.frame-edge.right .seg {
+  flex: 1 1 auto;
+  width: 4px;
+  background: #0e0906;
+}
+
+.frame-edge .label {
+  display: inline-block;
+  padding: 2px 6px;
+  font-family: "IM Fell English SC", serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #0e0906;
+  line-height: 1;
+}
+
+.frame-edge.left .label,
+.frame-edge.right .label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+.frame-edge.right .label {
+  transform: rotate(180deg);
+}
+
+.frame-edge.bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.frame-edge.divider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.frame-edge.bottom .seg,
+.frame-edge.divider .seg {
+  flex: 1 1 auto;
+  height: 4px;
+  background: #0e0906;
+}
+.frame-edge.bottom .label,
+.frame-edge.divider .label {
+  display: inline-block;
+  padding: 0 8px;
+  font-family: "IM Fell English SC", serif;
+  letter-spacing: 0.5px;
+  color: #0e0906;
+  line-height: 1;
+}
+
+.frame-edge.bottom .label {
+  font-size: 14px;
+}
+.frame-edge.divider .label {
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  .headline-divider.top .logo-mark {
+    left: 20% !important;
+  }
+  .headline-divider.top {
+    flex: 0 0 50% !important;
+  }
+  .strapline {
+    gap: 14px !important;
+  }
+}
