@@ -6,12 +6,24 @@
 
 @font-face {
   font-family: "MainText";
-  src: url("fonts/main-text.ttf") format("truetype");
+  src: url("fonts/main-text.TTF") format("truetype");
   font-weight: 900;
 }
 @font-face {
+  font-family: "HighlightText";
+  src: url("fonts/highlight-text.ttf") format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
   font-family: "Title";
   src: url("fonts/titles.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "BigTitle";
+  src: url("fonts/big-title.ttf") format("truetype");
   font-weight: 900;
 }
 
@@ -71,7 +83,7 @@
 }
 
 .title {
-  font-family: "Title", serif;
+  font-family: "BigTitle", serif;
   text-align: center;
   font-size: 48px;
   font-weight: 900;
@@ -110,6 +122,10 @@
   display: block;
   height: 4px;
   background: #0e0906;
+}
+.headline-divider.top.strong::before {
+  height: 7px;
+
 }
 .headline-divider::before {
   margin-bottom: 2px;
@@ -252,6 +268,60 @@
   font-size: 17px;
 }
 
+
+.two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 48px;
+  margin: 30px 20px;
+}
+
+.col {
+  flex: 1 1 0;
+}
+
+.col-head {
+  font-family: "Title", serif;
+  font-size: 38px;
+  margin: 0;
+  letter-spacing: 2px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.col p, .pretty-list {
+  font-size: 20px;
+  text-align: justify;
+}
+.pretty-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pretty-list li {
+  position: relative;
+  padding-left: 24px;   
+  margin-bottom: 10px;
+}
+
+.pretty-list li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+
+
+.highlight {
+  font-family: "HighlightText", serif;  
+  font-size: 1.2em;
+  letter-spacing: 0.8px;
+  color: rgba(22, 3, 99, 0.853);
+}
+
 @media (max-width: 768px) {
   .headline-divider.top .logo-mark {
     left: 20% !important;
@@ -262,4 +332,11 @@
   .strapline {
     gap: 14px !important;
   }
+  .two-cols{
+    grid-template-columns: 1fr;     
+    gap: 24px;
+  }
 }
+
+
+
