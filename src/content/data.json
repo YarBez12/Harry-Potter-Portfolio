@@ -1,0 +1,159 @@
+{
+  "branding": {
+    "title": "THE DAILY DEVELOPER",
+    "strapLine": "Freshly Brewed Code for Muggles & Wizards Alike",
+    "topLine": "programming news"
+  },
+
+  "frame": {
+    "leftLabel": "From Bugs to Brilliance",
+    "rightLabel": "Turning Ideas Into Interfaces",
+    "bottomLabel": "Innovation in Progress"
+  },
+  "title": {
+    "name": "Yaroslav Bezvesilnyi",
+    "dividerLabel": "PORTFOLIO"
+  },
+  "instructions": {
+    "title" : "WEBSITE GUIDELINES",
+    "items" :[
+    "All sections are clearly marked with titles, making it easy to find the information you need.",
+    "The most important details are visually highlighted based on their relevance.",
+    "Hard skills are presented as cards that can be toggled using arrow buttons.",
+    "Most hard skills include related projects — clicking on them opens the corresponding project page.",
+    "If you see a small triangle icon, it means additional info is available for that item.",
+    "All of my projects are listed at the bottom of the page and displayed as cards with navigation arrows.",
+    "This website is built using React."
+  ]},
+  "sections": {
+    "personal_statement": {
+      "title": "PERSONAL STATEMENT",
+      "text": "Self-motivated <span class=\"highlight\">Software Systems Development</span> student with a strong foundation in <i>application development</i>, with several projects under my belt. Passionate about building <span class=\"highlight\">effective solutions</span> and eager to explore new technologies, frameworks, and optimization techniques to create great <span class=\"highlight\">user experiences</span>. My main interest lies in <span class=\"highlight\">back-end development</span>, as well as working with <span class=\"highlight\">databases</span> and improving <span class=\"highlight\">system efficiency</span>. I am motivated to <i>learn from experienced professionals, understand how the industry works, and gain both technical and soft skills while contributing to real-world projects</i>."
+    },
+    "skills": {
+      "soft_skills": {
+        "title": "SOFT SKILLS",
+        "text": [
+          {
+            "title": "Teamwork",
+            "description": "Took part in a project to develop a <b>random terrain generator</b> for a city computer science tournament (2nd place, December 2022). My role was to <b>generate ideas</b> and <b>identify logical bugs</b> in the code."
+          },
+          {
+            "title": "Problem Solving",
+            "description": "3rd place in the <b>Kharkiv regional olympiads in programming, maths and physics</b>. They improved my ability to solve non-standard problems and apply theoretical knowledge to complex tasks, as well as helped me develop <b>algorithms thinking</b>."
+          },
+          {
+            "title": "Presentation Skills and Analytical Thinking",
+            "description": "Took part in the <b>all-Ukrainian tournament of young inventors</b> (2nd place), where we defended our projects in front of an audience and critiqued other teams’ work"
+          },
+          {
+            "title": "Documentation and Technical Writing",
+            "description": "Wrote a <b>full documentation</b> for my coursework application, describing the development process in a structured way."
+          },
+          {
+            "title": "Leadership",
+            "description": "As a <b>class representative</b> at school, helped organise different events and improve class life."
+          },
+          {
+            "title": "Languages",
+            "description": "My native languages are Ukrainian and Russian. My <b>English level is B2 (with certificate)</b>."
+          }
+        ]
+      },
+      "hard_skills": {
+        "title": "HARD SKILLS",
+        "text": [
+          {
+            "title": "Python syntax",
+            "description": "Core & advanced Python: control flow, function types, decorators, OOP, comprehensions, generators, async, testing, files & JSON.",
+            "additional_information": "Confident in control flow, various types of functions (including lambdas and higher-order functions), decorators, OOP (classes, inheritance, dunder methods), comprehensions, generators. Worked with JSON, files and database connection. Familiar with error handling, unit testing, modules/packages structure and asynchronous code",
+            "projects": ["Online Tech Shop", "Advertisement App"]
+          },
+          {
+            "title": "Python Django",
+            "description": "Full Django MVT with PostgreSQL and optimised ORM, CBVs and mixins, custom auth, middleware, signals and permissions, Celery, Redis and Stripe.",
+            "additional_information": "Experienced with the full Django MVT structure (models, views, templates, forms, URL routing, built-in authentication system and ORM), PostgreSQL and optimisation ORM queries. Used Class-Based Views and mixins, customised user models, and created custom authentication backends. Worked with both built-in and custom middleware, signals, permissions and access control. Set up Celery with Redis for background tasks and used Redis for caching, and implemented Stripe for payments and checkout logic. Organised projects with modular architecture, customised the admin panel, and managed static and media files",
+            "projects": ["Online Tech Shop"]
+          },
+          {
+            "title": "Databases and SQL",
+            "description": "Relational design from conceptual to physical, CRUD, constraints and indexes, complex SQL (joins, subqueries, group/aggregate), ORM.",
+            "additional_information": "Experienced in designing relational databases from scratch, from conceptual and logical design (entities, relationships, normalisation) to physical schema implementation in PostgreSQL or MySQL. Confident creating tables, altering structures, adding constraints, indexes, and relationships, inserting, updating and deleting data, writing complex SQL queries with joins, subqueries, grouping and aggregations. Used both raw SQL and ORM (Django), handled migrations and different relationships.",
+            "projects": [
+              "Advertisement App",
+              "Online Tech Shop",
+              "Task Manager"
+            ]
+          },
+          {
+            "title": "C# syntax",
+            "description": "C# OOP and generics, LINQ, exceptions, file I/O and JSON, Windows Forms basics, delegates, events, partial classes.",
+            "additional_information": "Confident in OOP (classes, interfaces, inheritance, encapsulation) and different built-in collections and generics. Used LINQ for data filtering and transformation, implemented exception handling, and worked with file I/O and JSON. Familiar with Windows Forms, worked with forms, events, UI components and basic app logic. Familiar with delegates, events and partial classes. Projects: enroller handbook, task manager",
+            "projects": ["Task Manager", "Enroller Handbook"]
+          },
+          {
+            "title": "C# .NET MAUI",
+            "description": "Cross-platform apps with XAML + MVVM: layouts, navigation, styles and resources, Two-Way binding,  SQLite and date/time handling.",
+            "additional_information": "Experienced in developing cross-platform applications using XAML-based interfaces and the MVVM pattern to separate logic and presentation. Worked with multiple layouts to structure adaptive pages, implemented navigation between different screens and applied shared styling through resources. Used data binding (including TwoWay) to connect UI and ViewModels and wrote additional logic in code-behind where necessary. Integrated SQLite for storing and retrieving local data and worked with dates and timestamps.",
+            "projects": ["Task Manager"]
+          },
+          {
+            "title": "HTML, CSS, JavaScript",
+            "description": "Semantic HTML, responsive CSS (Flexbox, Grid, positioning, media queries and animations), modern JS, DOM, fetch/async, storage, validation.",
+            "additional_information": "Experienced in semantic markup, forms, tables, lists, media elements and meta tags. Build responsive layouts using Flexbox, Grid, positioning, media queries, pseudo-elements and animations. In JavaScript, use modern features (e.g. arrow functions), DOM manipulation, events, Fetch API with async/await, LocalStorage, JSON parsing, form validation, date handling and error management. Worked with front-end plugins and UI libraries, including Semantic UI, and have a basic understanding of React and the component-based approach.",
+            "projects": [
+              "Movie Catalog",
+              "Online Tech Shop",
+              "Personal Website"
+            ]
+          },
+          {
+            "title": "Tools & Environments",
+            "description": "Git/GitHub workflows, Linux CLI and system basics, Qt Designer, Blender, Microsoft Office.",
+            "additional_information": "Confident using Git and GitHub for version control, branching and collaboration. Comfortable working in Linux environments (terminal commands, filesystem navigation, permissions, process management, basic networking tools, and package management). Basic experience with Qt Designer for building UI layouts, Blender for simple 3D edits, and Microsoft Office for documentation and presentations.",
+            "projects": []
+          },
+          {
+            "title": "Data Structures and Algorithms",
+            "description": "Core data structures, sorting, searching, recursion, complexity analysis and practical optimisation.",
+            "additional_information": "Confident working with arrays, linked lists, stacks, queues, hash tables, trees and graphs. Understand sorting and searching algorithms, recursion, complexity analysis and algorithmic optimisation.",
+            "projects": [
+              "Online Tech Shop",
+              "Task Manager",
+              "Advertisement App",
+              "Enroller Handbook",
+              "Movie Catalog",
+              "Personal Website"
+            ]
+          },
+          {
+            "title": "Data Analytics",
+            "description": "NumPy vectorisation, Pandas cleaning, merge, group, filter and Matplotlib for charts and exploratory analysis.",
+            "additional_information": "Confident in using NumPy for numerical operations, vectorised calculations and array manipulation, and Pandas for working with tabular data, grouping, filtering, merging and cleaning datasets. Used Matplotlib to visualise trends, build charts and explore data patterns.",
+            "projects": []
+          }
+        ]
+      },
+      "education": {
+        "title": "EDUCATION",
+        "text": [
+          {
+            "institution": "SOUTH EAST TECHNOLOGICAL UNIVERSITY",
+            "location": "Waterford, Ireland",
+            "years": "2024 - 2027",
+            "degree": "Bachelor of Science in Software Systems Development",
+            "course_info": "https://www.setu.ie/courses/bsc-hons-in-software-systems-development",
+            "focus": "Main focus is on software engineering process, tools, programming concepts, creative problem solving and UX design.",
+            "average_grade": "92.6%"
+          },
+          {
+            "institution": "KHARKIV LYCEUM NO. 122",
+            "location": "Kharkiv, Ukraine",
+            "years": "Graduated in 2023 (with honours)",
+            "details": "Finished school with almost the highest marks for final exams, participated in national and regional olympiads and technical competitions, consistently placing highly, including many 1st places."
+          }
+        ]
+      }
+    }
+  }
+}
