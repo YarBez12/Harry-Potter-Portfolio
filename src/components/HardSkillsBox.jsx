@@ -41,7 +41,7 @@ export default function HardSkillsBox({ hard_skills, isOpen, toggle }) {
 
         <div className="skill-card-line thick" />
 
-        <section className="skill-card-body dropcap">
+        <section className="skill-card-body">
           <p>
             {current.description}
             <ToggleButton

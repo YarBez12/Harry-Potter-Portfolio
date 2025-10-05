@@ -15,16 +15,17 @@
     "dividerLabel": "PORTFOLIO"
   },
   "instructions": {
-    "title" : "WEBSITE GUIDELINES",
-    "items" :[
-    "All sections are clearly marked with titles, making it easy to find the information you need.",
-    "The most important details are visually highlighted based on their relevance.",
-    "Hard skills are presented as cards that can be toggled using arrow buttons.",
-    "Most hard skills include related projects — clicking on them opens the corresponding project page.",
-    "If you see a small triangle icon, it means additional info is available for that item.",
-    "All of my projects are listed at the bottom of the page and displayed as cards with navigation arrows.",
-    "This website is built using React."
-  ]},
+    "title": "WEBSITE GUIDELINES",
+    "items": [
+      "All sections are clearly marked with titles, making it easy to find the information you need.",
+      "The most important details are visually highlighted based on their relevance.",
+      "Hard skills are presented as cards that can be toggled using arrow buttons.",
+      "Most hard skills include related projects — clicking on them opens the corresponding project page.",
+      "If you see a small triangle icon, it means additional info is available for that item.",
+      "All of my projects are listed at the bottom of the page and displayed as cards with navigation arrows.",
+      "This website is built using React."
+    ]
+  },
   "sections": {
     "personal_statement": {
       "title": "PERSONAL STATEMENT",
@@ -154,6 +155,108 @@
           }
         ]
       }
+    },
+    "projects": {
+      "title": "PROJECTS",
+      "items": [
+        {
+          "slug": "movie-catalog",
+          "title": "Movie Catalog",
+          "short_description": "A website to browse a movie catalog with <span class=\"highlight\">search</span>, <span class=\"highlight\">filters</span>, and <span class=\"highlight\">sorting</span>. Users can <span class=\"highlight\">add</span> or <span class=\"highlight\">edit movies</span>, leave <span class=\"highlight\">comments</span> and <span class=\"highlight\">reviews</span>, and try a random <span class=\"highlight\">quiz</span>. All data is displayed in a clear, organized way with <span class=\"highlight\">validation</span> and duplicate protection.",
+          "tech": "JS basics, Handlebars (Templating), Many plugins (such as Fuse.js, Toastify, Slick Carousel and so on), use of LocalStorage, HTML, CSS (including Fomantic UI) and CSS animations",
+          "detailed_description": {
+            "introduction": "This project was created as a <span class=\"highlight\">university assignment</span> at <span class=\"highlight\">SETU</span> to demonstrate my skills in building <span class=\"highlight\">interactive web applications</span> with <span class=\"highlight\">JavaScript</span> and various plugins. The site includes four main pages: Home, Movie Catalog, Movie Details, and Author Information.",
+            "features": [
+              "<span class=\"highlight\">Add</span> / <span class=\"highlight\">Edit</span> / <span class=\"highlight\">Delete</span> movies, comments, and reviews with strong <span class=\"highlight\">validation</span> and <span class=\"highlight\">duplicate prevention</span>",
+              "<span class=\"highlight\">Filtering</span>, <span class=\"highlight\">sorting</span>, and advanced <span class=\"highlight\">search</span> with reset option",
+              "Dynamic pages rendered via <span class=\"highlight\">Handlebars</span> templating",
+              "Persistent data via <span class=\"highlight\">LocalStorage</span>",
+              "Extra engagement: smooth <span class=\"highlight\">animations</span> and a <span class=\"highlight\">Movie Quiz</span>",
+              "Image UX with <span class=\"highlight\">lightGallery</span> and a <span class=\"highlight\">before/after slider</span>"
+            ],
+            "screenshots": [
+              "/img/projects/movie-catalog/01-home.png",
+              "/img/projects/movie-catalog/02-filters.png",
+              "/img/projects/movie-catalog/03-modal.png",
+              "/img/projects/movie-catalog/04-film-info.png",
+              "/img/projects/movie-catalog/05-quiz-and-review.png"
+            ]
+          },
+          "links": {
+            "git_hub": "https://github.com/YarBez12/Movie-Catalog-CA1",
+            "live": "https://20113257-movie-catalog-ca.netlify.app/"
+          }
+        },
+        {
+          "slug": "task-manager",
+          "title": "Task Manager",
+          "short_description": "A <span class=\"highlight\">cross-platform</span> app for creating and managing tasks and corresponding exercises for each task. User can toggle completion status, set the order of exercises, see <span class=\"highlight\">schedule</span> in a calendar-view format and manage it. The UX is clear with <span class=\"highlight\">colour-coded scheduling</span> and different <span class=\"highlight\">error preventions</span>.",
+          "tech": "C#, .Net MAUI, MVVM Architecture, SQLite percistance, XAML files, Asynchronous programming, Dependency injection, OOP",
+          "detailed_description": {
+            "introduction": "This project shows my ability to create <span class=\"highlight\">multiplatform apps</span> using <span class=\"highlight\">.Net MAUI</span>. This app has 3 main tabs: Current tasks, Completed tasks and Schedule, making it easier to organize work, track progress, and plan ahead.",
+            "features": [
+              "Adding tasks and connected exercises and <span class=\"highlight\">managing</span> them in various ways, such as setting <span class=\"highlight\">deadlines</span>, <span class=\"highlight\">priority</span> for tasks, and dates and <span class=\"highlight\">order</span> for exercises, as well as toggling their completion status.",
+              "Smart <span class=\"highlight\">schedule page</span>: daily view with <span class=\"highlight\">colour-coded exercises</span> and <span class=\"highlight\">automatic midnight updates</span>.",
+              "<span class=\"highlight\">Filtering</span> and <span class=\"highlight\">sorting</span> of tasks by category, overdue statuses and other parameters.",
+              "<span class=\"highlight\">Copy & paste</span> functionality for exercises with a <span class=\"highlight\">buffer implementation</span>.",
+              "UX built with <span class=\"highlight\">XAML layouts</span>, multiple <span class=\"highlight\">data bindings</span>, <span class=\"highlight\">value convertors</span> and validation, including <span class=\"highlight\">async</span> updates, real-time status changes and error prevention.",
+              "Data storage in <span class=\"highlight\">SQLite</span> using .NET MAUI approach."
+            ],
+            "screenshots": [
+              "/img/projects/tasks-manager/01-current-tasks.png",
+              "/img/projects/tasks-manager/02-task-details.png",
+              "/img/projects/tasks-manager/03-add-task.png",
+              "/img/projects/tasks-manager/04-schedule-page.png",
+              "/img/projects/tasks-manager/05-add-exercise.png",
+              "/img/projects/tasks-manager/06-filter-popup.png"
+            ]
+          },
+          "links": {
+            "git_hub": "https://github.com/YarBez12/Task-Manager",
+            "live": "https://github.com/YarBez12/Task-Manager/releases/download/v1.0/TasksManager.apk"
+          }
+        },
+        {
+          "slug": "tech-shop",
+          "title": "Tech Shop (Main Project)",
+          "short_description": "A full-featured <span class=\"highlight\">e-commerce platform</span> with multi-level categories, <span class=\"highlight\">recommendation system</span>, advanced search, <span class=\"highlight\">Stripe</span> integration, and admin management tools. Users can browse, filter, and purchase products, manage their profile and orders, or even create and sell their <span class=\"highlight\">own products</span>, all with real-time updates and <span class=\"highlight\">notifications</span>. Also there is  <span class=\"highlight\">a course system</span> with ability to manage modules and contents.",
+          "tech": "Python, Django, PostgreSQL, Redis, Celery, Stripe API, HTML, CSS, JS (Vanilla + AJAX), Template Tags, Custom Middleware, Signals, Context Processors, Caching",
+          "detailed_description": {
+            "introduction": "This is a <span class=\"highlight\">complex multi-purpose</span> online shop built with Django, where users can browse, filter, and<span class=\"highlight\"> buy</span> products, as well as manage their <span class=\"highlight\">own sales and educational courses</span>.",
+            "features": [
+              "Structured <span class=\"highlight\">multi-level</span> categories and brands, where each big category has subcategories and brands have their pages with ability to <span class=\"highlight\">subscribe for news</span>.",
+              "Smart <span class=\"highlight\">recommendation system</span> that suggest similar products and popular products.",
+              "<span class=\"highlight\">Advanced filtering</span> for products in category that based on the existing characteristics, their values, brands and price range in that category, and <span class=\"highlight\">advanced searching</span> for products and categories with <span class=\"highlight\">highlighting query</span>.",
+              "<span class=\"highlight\">Pagination</span> and <span class=\"highlight\">endless scroll</span> for long lists.",
+              "Advanced product page that shows detailed info, has <span class=\"highlight\">custom image modal viewer</span> and <span class=\"highlight\">reviews</span> tab with ability to manage and filter them.",
+              "Logging and registration with ability to <span class=\"highlight\">reset password</span>, stay logged in for long time and sign in with <span class=\"highlight\">Google</span>.",
+              "<span class=\"highlight\">Carts</span> with full logic, including quantity control, <span class=\"highlight\">stock limits</span>, <span class=\"highlight\">coupon system</span>, checkout, Stripe and <span class=\"highlight\">Stripe webhook</span> integration for updating database.",
+              "<span class=\"highlight\">Admin panel</span> with ability to manage each item, search and export to CSV.",
+              "User <span class=\"highlight\">profiles</span> with many tabs with ability to <span class=\"highlight\">add own products</span>, manage them and view other people’s <span class=\"highlight\">actions</span> on them.",
+              "<span class=\"highlight\">Courses platform</span> with ability to add your own courses, fill in with modules and various content, mange order of content by <span class=\"highlight\">dragging</span> items and <span class=\"highlight\">enrol</span> other courses.",
+              "<span class=\"highlight\">Asynchronous and optimized backend</span> with background jobs, caching, different query optimisation, automatic and manual <span class=\"highlight\">email sending</span> and custom commands for terminal."
+            ],
+            "screenshots": [
+              "/img/projects/tech-shop/01-main.png",
+              "/img/projects/tech-shop/02-category.png",
+              "/img/projects/tech-shop/03-brand.png",
+              "/img/projects/tech-shop/04-subcategory.png",
+              "/img/projects/tech-shop/05-product.png",
+              "/img/projects/tech-shop/06-search.png",
+              "/img/projects/tech-shop/07-cart.png",
+              "/img/projects/tech-shop/08-login.png",
+              "/img/projects/tech-shop/09-profile.png",
+              "/img/projects/tech-shop/10-courses.png",
+              "/img/projects/tech-shop/11-course-manage.png",
+              "/img/projects/tech-shop/12-admin-panel.png"
+            ]
+          },
+          "links": {
+            "git_hub": "https://github.com/YarBez12/Tech-shop",
+            "live": ""
+          }
+        }
+      ]
     }
   }
 }

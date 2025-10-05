@@ -3,8 +3,9 @@ import SubHeader from "./SubHeader.jsx";
 import PersonalStatement from "./PersonalStatement.jsx";
 import WebsiteGuide from "./WebsiteGuide.jsx";
 import SkillsSection from "./SkillsSection.jsx"
+import ProjectsSection from "./ProjectsSection.jsx";
 
-export default function MainSection({ frame, title, sections, instructions }) {
+export default function MainSection({ frame, title, sections }) {
 
   return (
     <div className="content-frame">
@@ -16,9 +17,10 @@ export default function MainSection({ frame, title, sections, instructions }) {
           <PersonalStatement
             personal_statement={sections.personal_statement}
           ></PersonalStatement>
-          <WebsiteGuide instructions={instructions}></WebsiteGuide>
+          <ProjectsSection projects={sections.projects}></ProjectsSection>
         </div>
         <SkillsSection skills={sections.skills}></SkillsSection>
+
       </div>
     </div>
   );

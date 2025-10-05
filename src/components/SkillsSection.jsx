@@ -19,7 +19,6 @@ export default function SkillsSection({skills}) {
         isOpen={isOpen}
         toggle={toggle}
       ></EducationBox>
-      <div className="headline-divider strong top"></div>
     </div>
   );
 }
