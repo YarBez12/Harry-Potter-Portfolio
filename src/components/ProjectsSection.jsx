@@ -1,6 +1,6 @@
-// ProjectsSection.jsx
 import { useState } from "react";
 import ProjectCard from "./ProjectCard.jsx";
+
 
 export default function ProjectsSection({ projects }) {
   const items = projects.items;
@@ -14,25 +14,13 @@ export default function ProjectsSection({ projects }) {
     <section className="box projects-box">
       <h3 className="skill-title">{projects.title}</h3>
       <div className="projects-info">
-        <ProjectCard project={current} />
-
-        <div className="project-nav">
-          <button type="button" className="nav prev" onClick={prev}>
-            <span className="nav-arrow left">Previous</span>
-            <span className="nav-connector" />
-            <span className="nav-arrow-text">
-              {items[(index - 1 + items.length) % items.length].title}
-            </span>
-          </button>
-
-          <button type="button" className="nav next" onClick={next}>
-            <span className="nav-arrow right">Next</span>
-            <span className="nav-connector" />
-            <span className="nav-arrow-text">
-              {items[(index + 1) % items.length].title}
-            </span>
-          </button>
-        </div>
+        <ProjectCard
+          project={current}
+          prevLabel={items[(index - 1 + items.length) % items.length].title}
+          nextLabel={items[(index + 1) % items.length].title}
+          onPrev={prev}
+          onNext={next}
+        />
       </div>
     </section>
   );

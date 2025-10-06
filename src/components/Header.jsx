@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
+
 export default function Header({ branding }) {
   return (
     <>
       <div className="headline-divider-row">
         <div className="headline-divider top">
-          <div className="logo-mark"></div>
+          <Link to="/" className="logo-link">
+            <div className="logo-mark"></div>
+          </Link>
         </div>
         <span className="headline-text">{branding.topLine}</span>
         <div className="headline-divider rest-top"></div>

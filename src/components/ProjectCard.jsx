@@ -1,12 +1,24 @@
-// ProjectCard.jsx
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import SkillCardHeader from "./SkillCardHeader.jsx";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({
+  project,
+  prevLabel,
+  nextLabel,
+  onPrev,
+  onNext,
+}) {
   return (
     <article className="skill-card project">
       <div className="project-card-header">
-        <h3 className="skill-card-title">{project.title}</h3>
+        <SkillCardHeader
+          title={project.title}
+          prevLabel={prevLabel}
+          nextLabel={nextLabel}
+          onPrev={onPrev}
+          onNext={onNext}
+        />
 
         <div className="project-links">
           <a

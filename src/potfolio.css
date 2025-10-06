@@ -305,7 +305,7 @@
 
 .two-cols {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: 1fr 1.7fr;
   gap: 48px;
   margin: 30px 20px;
 }
