@@ -1,14 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard.jsx";
 
 
 export default function ProjectsSection({ projects }) {
   const items = projects.items;
-  const [index, setIndex] = useState(0);
+  const PROJECT_INDEX_KEY = "ui:lastProjectIndex";
+   const [index, setIndex] = useState(() => {
+     const saved = sessionStorage.getItem(PROJECT_INDEX_KEY);
+     const n = Number(saved);
+     return Number.isInteger(n) && n >= 0 && n < items.length ? n : 0;
+   });
 
   const prev = () => setIndex((i) => (i === 0 ? items.length - 1 : i - 1));
   const next = () => setIndex((i) => (i === items.length - 1 ? 0 : i + 1));
   const current = items[index];
+  useEffect(() => {
+     sessionStorage.setItem(PROJECT_INDEX_KEY, String(index));
+   }, [index]);
 
   return (
     <section className="box projects-box">

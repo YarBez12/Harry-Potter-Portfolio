@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Collapse from "./Collapse";
 import ToggleButton from "./ToggleButton.jsx";
 import SkillCardHeader from "./SkillCardHeader.jsx";
@@ -6,7 +6,12 @@ import SkillProjects from "./SkillProjects.jsx"
 
 export default function HardSkillsBox({ hard_skills, isOpen, toggle }) {
   const skills = hard_skills.text;
-  const [index, setIndex] = useState(0);
+  const SKILL_INDEX_KEY = "ui:lastSkillIndex";
+  const [index, setIndex] = useState(() => {
+     const saved = sessionStorage.getItem(SKILL_INDEX_KEY);
+     const n = Number(saved);
+     return Number.isInteger(n) && n >= 0 && n < skills.length ? n : 0;
+   });
   const [dir, setDir] = useState("right");
 
   const current = skills[index];
@@ -22,6 +27,9 @@ export default function HardSkillsBox({ hard_skills, isOpen, toggle }) {
     setDir("right");
     setIndex((prev) => (prev === skills.length - 1 ? 0 : prev + 1));
   };
+  useEffect(() => {
+     sessionStorage.setItem(SKILL_INDEX_KEY, String(index));
+   }, [index]);
   return (
     <section className="box skill-card-box">
       <h3 className="skill-title">{hard_skills.title}</h3>
