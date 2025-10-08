@@ -4,7 +4,7 @@ import ToggleButton from "./ToggleButton.jsx";
 import SkillCardHeader from "./SkillCardHeader.jsx";
 import SkillProjects from "./SkillProjects.jsx"
 
-export default function HardSkillsBox({ hard_skills, isOpen, toggle }) {
+export default function HardSkillsBox({ hard_skills, isOpen, toggle, setProjectIndex, allProjects }) {
   const skills = hard_skills.text;
   const SKILL_INDEX_KEY = "ui:lastSkillIndex";
   const [index, setIndex] = useState(() => {
@@ -73,7 +73,7 @@ export default function HardSkillsBox({ hard_skills, isOpen, toggle }) {
         {current.projects?.length ? (
           <>
             <div className="skill-card-line thin" />
-            <SkillProjects projects={current.projects}></SkillProjects>
+            <SkillProjects projects={current.projects} setProjectIndex={setProjectIndex} allProjects={allProjects}></SkillProjects>
           </>
         ) : null}
       </article>

@@ -10,7 +10,7 @@ export default function ProjectCard({
   onNext,
 }) {
   return (
-    <article className="skill-card project">
+    <article className="skill-card project" id="project-card">
       <div className="project-card-header">
         <SkillCardHeader
           title={project.title}

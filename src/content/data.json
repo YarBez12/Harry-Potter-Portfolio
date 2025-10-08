@@ -68,23 +68,19 @@
             "title": "Python Django",
             "description": "Full Django MVT with PostgreSQL and optimised ORM, CBVs and mixins, custom auth, middleware, signals and permissions, Celery, Redis and Stripe.",
             "additional_information": "Experienced with the full Django MVT structure (models, views, templates, forms, URL routing, built-in authentication system and ORM), PostgreSQL and optimisation ORM queries. Used Class-Based Views and mixins, customised user models, and created custom authentication backends. Worked with both built-in and custom middleware, signals, permissions and access control. Set up Celery with Redis for background tasks and used Redis for caching, and implemented Stripe for payments and checkout logic. Organised projects with modular architecture, customised the admin panel, and managed static and media files",
-            "projects": ["Online Tech Shop"]
+            "projects": ["Tech Shop"]
           },
           {
             "title": "Databases and SQL",
             "description": "Relational design from conceptual to physical, CRUD, constraints and indexes, complex SQL (joins, subqueries, group/aggregate), ORM.",
             "additional_information": "Experienced in designing relational databases from scratch, from conceptual and logical design (entities, relationships, normalisation) to physical schema implementation in PostgreSQL or MySQL. Confident creating tables, altering structures, adding constraints, indexes, and relationships, inserting, updating and deleting data, writing complex SQL queries with joins, subqueries, grouping and aggregations. Used both raw SQL and ORM (Django), handled migrations and different relationships.",
-            "projects": [
-              "Advertisement App",
-              "Online Tech Shop",
-              "Task Manager"
-            ]
+            "projects": ["Advertisement Agency", "Tech Shop", "Task Manager"]
           },
           {
             "title": "Python syntax",
             "description": "Core & advanced Python: control flow, function types, decorators, OOP, comprehensions, generators, async, testing, files & JSON.",
             "additional_information": "Confident in control flow, various types of functions (including lambdas and higher-order functions), decorators, OOP (classes, inheritance, dunder methods), comprehensions, generators. Worked with JSON, files and database connection. Familiar with error handling, unit testing, modules/packages structure and asynchronous code",
-            "projects": ["Online Tech Shop", "Advertisement App"]
+            "projects": ["Tech Shop", "Advertisement Agency"]
           },
           {
             "title": "C# .NET MAUI",
@@ -102,29 +98,24 @@
             "title": "HTML, CSS, JavaScript",
             "description": "Semantic HTML, responsive CSS (Flexbox, Grid, positioning, media queries and animations), modern JS, DOM, fetch/async, storage, validation.",
             "additional_information": "Experienced in semantic markup, forms, tables, lists, media elements and meta tags. Build responsive layouts using Flexbox, Grid, positioning, media queries, pseudo-elements and animations. In JavaScript, use modern features (e.g. arrow functions), DOM manipulation, events, Fetch API with async/await, LocalStorage, JSON parsing, form validation, date handling and error management. Worked with front-end plugins and UI libraries, including Semantic UI, and have a basic understanding of React and the component-based approach.",
-            "projects": [
-              "Movie Catalog",
-              "Online Tech Shop",
-              "Personal Website"
-            ]
+            "projects": ["Movie Catalog", "Tech Shop"]
           },
           {
             "title": "Tools & Environments",
-            "description": "Git/GitHub workflows, Linux CLI and system basics, Qt Designer, Blender, Microsoft Office.",
-            "additional_information": "Confident using Git and GitHub for version control, branching and collaboration. Comfortable working in Linux environments (terminal commands, filesystem navigation, permissions, process management, basic networking tools, and package management). Basic experience with Qt Designer for building UI layouts, Blender for simple 3D edits, and Microsoft Office for documentation and presentations.",
-            "projects": []
+            "description": "Git/GitHub workflows, Web deployment, Linux CLI and system basics, Qt Designer, Blender, Microsoft Office.",
+            "additional_information": "Confident using Git and GitHub for version control, branching and collaboration. Deployed a full web project using Render, managing build configuration, environment variables, and live updates. Comfortable working in Linux environments (terminal commands, filesystem navigation, permissions, process management, basic networking tools, and package management). Basic experience with Qt Designer for building UI layouts, Blender for simple 3D edits, and Microsoft Office for documentation and presentations.",
+            "projects": ["Tech Shop"]
           },
           {
             "title": "Data Structures and Algorithms",
             "description": "Core data structures, sorting, searching, recursion, complexity analysis and practical optimisation.",
             "additional_information": "Confident working with arrays, linked lists, stacks, queues, hash tables, trees and graphs. Understand sorting and searching algorithms, recursion, complexity analysis and algorithmic optimisation.",
             "projects": [
-              "Online Tech Shop",
+              "Tech Shop",
               "Task Manager",
-              "Advertisement App",
+              "Advertisement Agency",
               "Enroller Handbook",
-              "Movie Catalog",
-              "Personal Website"
+              "Movie Catalog"
             ]
           },
           {

@@ -470,7 +470,13 @@
   border-radius: 999px;
   background: rgba(226, 226, 13, 0.4);
 }
-
+.tag-link {
+  all: unset;                
+  cursor: pointer;           
+  color: inherit;           
+  font: inherit;            
+  display: inline;           
+}
 .skill-card {
   padding: 18px 18px 16px;
   background: linear-gradient(transparent, transparent), rgba(255, 255, 39, 0.1);

@@ -3,7 +3,7 @@ import HardSkillsBox from "./HardSkillsBox.jsx";
 import EducationBox from "./EducationBox.jsx";
 import { useState } from "react";
 
-export default function SkillsSection({skills}) {
+export default function SkillsSection({skills, setProjectIndex, allProjects}) {
   const [isOpen, setIsOpen] = useState(null);
   const toggle = (key) => setIsOpen((prev) => (prev === key ? null : key));
   return (
@@ -13,6 +13,8 @@ export default function SkillsSection({skills}) {
         hard_skills={skills.hard_skills}
         isOpen={isOpen}
         toggle={toggle}
+        setProjectIndex={setProjectIndex}
+        allProjects={allProjects}
       ></HardSkillsBox>
       <EducationBox
         education={skills.education}

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import LightGallery from 'lightgallery/react';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
@@ -32,7 +33,12 @@ export default function ProjectDetails({ projects, frame }) {
   return (
     <div className="content-frame">
       <MainFrame frame={frame} />
-      <div className="frame-inner bodycopy">
+      <motion.div
+        className="frame-inner bodycopy"
+        initial={{ opacity: 0, y: 16, scale: 0.995 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.35, ease: "easeOut" }}
+      >
         <SubHeader
           title={{ name: project.title, dividerLabel: "PROJECT DETAILS" }}
         />
@@ -106,7 +112,7 @@ export default function ProjectDetails({ projects, frame }) {
             </>
           ) : null}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
