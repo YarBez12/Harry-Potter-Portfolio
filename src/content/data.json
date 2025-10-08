@@ -159,7 +159,7 @@
     "projects": {
       "title": "PROJECTS",
       "items": [
-                {
+        {
           "slug": "tech-shop",
           "title": "Tech Shop (Main Project)",
           "short_description": "A full-featured <span class=\"highlight\">e-commerce platform</span> with multi-level categories, <span class=\"highlight\">recommendation system</span>, advanced search, <span class=\"highlight\">Stripe</span> integration, and admin management tools. Users can browse, filter, and purchase products, manage their profile and orders, or even create and sell their <span class=\"highlight\">own products</span>, all with real-time updates and <span class=\"highlight\">notifications</span>. Also there is  <span class=\"highlight\">a course system</span> with ability to manage modules and contents.",
@@ -199,7 +199,7 @@
             "live": "https://tech-shop-6x1q.onrender.com/"
           }
         },
-                {
+        {
           "slug": "task-manager",
           "title": "Task Manager",
           "short_description": "A <span class=\"highlight\">cross-platform</span> app for creating and managing tasks and corresponding exercises for each task. User can toggle completion status, set the order of exercises, see <span class=\"highlight\">schedule</span> in a calendar-view format and manage it. The UX is clear with <span class=\"highlight\">colour-coded scheduling</span> and different <span class=\"highlight\">error preventions</span>.",
@@ -254,6 +254,67 @@
           "links": {
             "git_hub": "https://github.com/YarBez12/Movie-Catalog-CA1",
             "live": "https://20113257-movie-catalog-ca.netlify.app/"
+          }
+        },
+        {
+          "slug": "advertisement-agency",
+          "title": "Advertisement Agency",
+          "short_description": "A <span class=\"highlight\">full desktop app</span> built with PyQt5 to manage clients, campaigns, advertisements, users, and media platforms. <span class=\"highlight\">Admins</span> can manage all tables with complete <span class=\"highlight\">CRUD</span> functionality (with error prevention), view <span class=\"highlight\">related tables</span> for each entity, while clients can add new campaigns and generate <span class=\"highlight\">reports</span>, and users can see advertisements linked to their media platforms.",
+          "tech": "SQL (pyodbc), Python, PyQt5, MVC, OOP, PDF/Excel generation",
+          "detailed_description": {
+            "introduction": "This is a <span class=\"highlight\">desktop app</span> (built with PyQt5) developed as my <span class=\"highlight\">university assignment</span> that shows my skill in <span class=\"highlight\">database manipulation</span> and building a complete application for real-world data interaction. It combines several <span class=\"highlight\">user roles</span>, each has different rights and capabilities.",
+            "features": [
+              "<span class=\"highlight\">MVC</span> architecture and different <span class=\"highlight\">design patterns</span> for clean structure, maintainability, and data control.",
+              "Full <span class=\"highlight\">CRUD</span> functionality for all entities with robust validation and error handling.",
+              "<span class=\"highlight\">Role-based access</span> (admin, client, user) defining available features and permissions.",
+              "Detailed entity pages displaying all <span class=\"highlight\">related</span> tables with ability to add new or existing linked records.",
+              "Automated updates of related data and entity dependencies.",
+              "Sorting, filtering, searching, and smooth navigation between connected tables.",
+              "<span class=\"highlight\">Raw SQL</span> queries with full SQL <span class=\"highlight\">injection protection</span> and encapsulated connection lifecycle.",
+              "<span class=\"highlight\">PDF/Excel report</span> generation and real-time ad metrics tracking.",
+              "Simple users can view their related media platforms and corresponding advertisements."
+            ],
+            "screenshots": [
+              "/img/projects/advertisement-agency/01-main.png",
+              "/img/projects/advertisement-agency/02-campaigns-table.png",
+              "/img/projects/advertisement-agency/03-platform-window.png",
+              "/img/projects/advertisement-agency/04-client-form.png",
+              "/img/projects/advertisement-agency/05-client-view.png",
+              "/img/projects/advertisement-agency/06-user-view.png"
+            ]
+          },
+          "links": {
+            "git_hub": "https://github.com/YarBez12/Advertisement-Agency1",
+            "live": ""
+          }
+        },
+        {
+          "slug": "enroller-handbook",
+          "title": "Enroller Handbook",
+          "short_description": "A <span class=\"highlight\">Windows app</span> for exploring universities and related courses, sort, search and filter them, and add to favourites. Users can <span class=\"highlight\">add</span> their own universities and courses with good <span class=\"highlight\">error prevention</span>, <span class=\"highlight\">export</span> data to text files and see their competitive score.",
+          "tech": "C#, OOP, Windows Forms, JSON persistence, MVC structure",
+          "detailed_description": {
+            "introduction": "This is an app built as my <span class=\"highlight\">university assignment</span> to show my <span class=\"highlight\">OOP</span> skills and practical <span class=\"highlight\">C#</span> development. This app includes a collection of universities and related courses with all appropriate information.",
+            "features": [
+              "Using <span class=\"highlight\">MVC</span> method and <span class=\"highlight\">OOP</span> principles for organising code",
+              "Persistant data via <span class=\"highlight\">JSON files</span>",
+              "<span class=\"highlight\">Adding, editing</span> and <span class=\"highlight\">deleting</span> universities and courses of own choice with error prevention and data handling",
+              "<span class=\"highlight\">Sorting, filtering</span> and <span class=\"highlight\">searching</span> by different criteria",
+              "<span class=\"highlight\">Exporting</span> different information to text files",
+              "Adding <span class=\"highlight\">notes</span> to courses and creating favourite lists",
+              "<span class=\"highlight\">Calculating competitive score</span> for each course based on its coefficients "
+            ],
+            "screenshots": [
+              "/img/projects/enroller-handbook/01-universities.png",
+              "/img/projects/enroller-handbook/02-university-page.png",
+              "/img/projects/enroller-handbook/03-add-course.png",
+              "/img/projects/enroller-handbook/04-course-page.png",
+              "/img/projects/enroller-handbook/05-calculator.png"
+            ]
+          },
+          "links": {
+            "git_hub": "https://github.com/YarBez12/Enrolle-Handbook",
+            "live": ""
           }
         }
       ]
