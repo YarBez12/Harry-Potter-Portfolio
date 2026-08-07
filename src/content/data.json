@@ -29,7 +29,7 @@
   "sections": {
     "personal_statement": {
       "title": "PERSONAL STATEMENT",
-      "text": "Self-motivated <span class=\"highlight\">Software Systems Development</span> student with a strong foundation in <i>application development</i>, with several projects under my belt. Passionate about building <span class=\"highlight\">effective solutions</span> and eager to explore new technologies, frameworks, and optimization techniques to create great <span class=\"highlight\">user experiences</span>. My main interest lies in <span class=\"highlight\">back-end development</span>, as well as working with <span class=\"highlight\">databases</span> and improving <span class=\"highlight\">system efficiency</span>. I am motivated to <i>learn from experienced professionals, understand how the industry works, and gain both technical and soft skills while contributing to real-world projects</i>."
+      "text": "Self-motivated <span class=\"highlight\">Software Systems Development</span> student with hands-on <span class=\"highlight\">Site Reliability Engineering</span> experience at <span class=\"highlight\">Google</span> and a strong foundation in <i>full-stack application development</i>, backed by several completed and deployed projects. Passionate about <span class=\"highlight\">back-end development</span>, <span class=\"highlight\">database management</span>, and <span class=\"highlight\">process automation</span>. Experienced in <i>backend system integration, low-level telemetry, and large-scale environments</i>, with proven ability to navigate the entire <span class=\"highlight\">software production lifecycle</span>, from technical design documentation to <span class=\"highlight\">live monitoring in production</span>."
     },
     "skills": {
       "soft_skills": {
@@ -148,8 +148,37 @@
       }
     },
     "projects": {
-      "title": "PROJECTS",
+      "title": "WORK EXPERIENCE & PROJECTS",
       "items": [
+        {
+          "slug": "google-sre-internship",
+          "title": "Google SRE Intern - Cloud SQL SRE",
+"short_description": "Engineered a <span class=\"highlight\">Go backend system</span> to automatically enrich <span class=\"highlight\">production alert tickets</span> with hardware metadata and correlated issues for each attribute, significantly decreasing <span class=\"highlight\">Root Cause Analysis (RCA)</span> investigation time for on-call engineers. Navigated the complete <span class=\"highlight\">software production lifecycle</span>, from initial technical design documentation, peer reviews, and building reusable libraries to <span class=\"highlight\">live production rollout</span>, monitoring, and final presentation.",
+"tech": "Go (Golang), Bazel, Prometheus, Metrics & Telemetry Pipelines, Jira (Issue Tracking), Distributed Systems, SQL, Command-Line AI (Gemini), Cloud CLI, Linux (RHEL), Git",
+          "detailed_description": {
+            "introduction": "During my summer internship with the <span class=\"highlight\">Cloud SQL SRE team</span> at Google Dublin, I focused on improving incident response automation, system observability, and telemetry enrichment for large-scale cloud infrastructure.",
+            "features": [
+  "Decreased <span class=\"highlight\">Root Cause Analysis (RCA)</span> investigation time for on-call engineers by building a system that automatically enriches alert tickets with hardware metadata and correlates issues across <span class=\"highlight\">shared hosts, racks, and power buses</span>",
+  "Created a highly general <span class=\"highlight\">Go library</span> for hardware data collection that can be adopted both by other teams",
+  "Provided ability to easily add other attributes for correlation (not necessary hardware) by <span class=\"highlight\">reusing existing methods</span>",
+  "Designed a highly <span class=\"highlight\">parallelized pipeline</span> using <span class=\"highlight\">Go-routines</span> for asynchronous correlation, optimized database queries and created custom index",
+  "Created <span class=\"highlight\">2 new production metrics</span> to monitor that our logic works as expected and dynamically adjust time windows to make logic more accurate and efficient",
+  "Created a plan to integrate the new package into our another existing system",
+  "Successfully navigated the full <span class=\"highlight\">engineering lifecycle</span>: created design document, addressed all comments and gained approvals, implemented all features on schedule, reviewed different comments on my change lists, and actively monitored the <span class=\"highlight\">production rollout</span>",
+  "Monitored in test environment and production analyzing logs and looking on different dashboards with my host and co-host",
+  "Actively <span class=\"highlight\">extended the project's scope</span> based on team feedback during design discussions. While the initial idea was to only correlate hostnames, I expanded the architecture to fetch and correlate multiple hardware attributes and generalized the logic so future attributes can be added seamlessly, also fetching logic was separated to another library which also was not planned initially",
+  "Refactored existing code to create <span class=\"highlight\">common library</span> that can be used at different places",
+  "Gained proficiency in contributing to a <span class=\"highlight\">massive, pre-existing codebase</span>",
+  "Implemented comprehensive <span class=\"highlight\">end-to-end (e2e) tests</span> utilizing mocking and stubbing techniques"
+
+            ],
+            "screenshots": []
+          },
+          "links": {
+            "git_hub": "",
+            "live": ""
+          }
+        },
         {
           "slug": "tech-shop",
           "title": "Tech Shop (Main Project)",

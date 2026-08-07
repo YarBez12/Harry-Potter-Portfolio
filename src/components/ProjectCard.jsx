@@ -21,14 +21,15 @@ export default function ProjectCard({
         />
 
         <div className="project-links">
-          <a
-            className="btn-link"
-            href={project.links.git_hub}
-            target="_blank"
-            rel="noreferrer"
-          >
+          {project.links.git_hub && (
+            <a
+              className="btn-link"
+              href={project.links.git_hub}
+              target="_blank"
+              rel="noreferrer"
+            >
             <FaGithub /> GitHub
-          </a>
+          </a>)}
           {project.links.live && (
             <a
               className="btn-link"

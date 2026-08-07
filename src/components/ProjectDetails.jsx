@@ -46,14 +46,14 @@ export default function ProjectDetails({ projects, frame }) {
         <div className="project-details">
           <div className="project-links">
             <div className="links-left">
-              <a
+              {project.links.git_hub && (<a
                 className="btn-link"
                 href={project.links.git_hub}
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaGithub /> GitHub
-              </a>
+              </a>)}
               {project.links.live && (
                 <a
                   className="btn-link"
